@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лендинг профессии телеком-инженера">
+  <title>Телеком-инженер — T2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="T2 — на главную"><img src="assets/t2_Logo_Black_sRGB.svg"></a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#about">О профессии</a>
+        <a href="#career">Карьера</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="btn btn-pink btn-game" href="https://kuwitidala.github.io/t2-mini-game" target="_blank" rel="noopener">
+        Пройти мини-игру
+      </a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: замените assets/hero.jpg на вашу картинку 1920x1080 -->
+    <section class="hero section-bg" style="--bg-image: url('assets/hero.jpg');" aria-label="Телеком-инженер">
+      <div class="container hero-content">
+  
+          <a class="btn btn-dark" href="#video">Узнать о профессии</a>
+
+      </div>
+    </section>
+
+    <!-- БЛОК 1 -->
+    <section class="steps section-1" id="about">
+      <div class="container-1">
+        <p class="content-panel-title-1">Что делает телеком-инженер?</p>
+        <div class="image-placeholder image-placeholder--steps" role="img" aria-label="Место для изображения блока «Что делает телеком-инженер»">
+          <div class="what-does-engineer">
+            <img src="assets/what-does-engineer-1.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 2: фон 1920x1080 + текст -->
+    <section class="profession section-bg" style="--bg-image: url('assets/suitability.jpg');">
+      <div class="container-pr">
+        <div class="content-panel content-panel--left">
+          <p class="content-panel-title-1">Подойдёт ли тебе эта профессия?</p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon-1" aria-hidden="true">
+                <img src="assets/plug.png">
+              </span>
+              <span>Любишь собирать, настраивать, улучшать коммуникации и системы</span>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                <img src="assets/grommet-icons_book.png">
+              </span>
+              <span>Интересуешься физикой, математикой или информатикой</span>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                  <img src="assets/lucide_heart-handshake.png">
+              </span>
+              <span>Хочешь, чтобы твоя работа приносила реальную пользу людям</span>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                  <img src="assets/power.png">
+              </span>
+              <span>Готов работать с технологиями, в реальных условиях и на объектах</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ВИДЕО -->
+    <section class="video-section section" id="video">
+      <div class="container">
+        <p class="content-panel-title-2">Ознакомься с профессией<br>телеком-инженера</p>
+
+        <div class="video-player" data-video-player>
+          <video class="video" preload="metadata" poster="assets/video-poster.jpg">
+            <!-- Когда будет видео, раскомментируйте:
+            <source src="assets/telecom-engineer.mp4" type="video/mp4">
+            -->
+          </video>
+
+          <div class="video-empty">
+            <button class="play-button" type="button" aria-label="Воспроизвести видео">
+              <svg viewBox="0 0 24 24"><path d="M9 6.5 18 12l-9 5.5z"/></svg>
+            </button>
+            <span>Видео скоро появится</span>
+          </div>
+
+          <div class="video-controls">
+            <button class="control-btn play-toggle" type="button" aria-label="Воспроизвести">
+              <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5.5 18 12l-10 6.5z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24"><path d="M7 5h4v14H7zm6 0h4v14h-4z"/></svg>
+            </button>
+
+            <div class="progress-wrap">
+              <input class="progress" type="range" min="0" max="100" value="0" aria-label="Прогресс видео">
+            </div>
+
+            <span class="time">0:00 / 0:00</span>
+
+            <button class="control-btn mute-toggle" type="button" aria-label="Выключить звук">
+              <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zm12 1.5a4 4 0 0 1 0 3M18.5 7a8 8 0 0 1 0 10"/></svg>
+            </button>
+
+            <button class="control-btn fullscreen-toggle" type="button" aria-label="На весь экран">
+              <svg viewBox="0 0 24 24"><path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- БЛОК 3: фон 1920x1080 + текст -->
+    <section class="career section-bg" id="career" style="--bg-image: url('assets/career.jpg');">
+      <div class="container">
+        <div class="content-panel-2 content-panel--right">
+          <p class="content-panel-title-2">Учиться — значит пробовать<br>на реальных задачах в T2</p>
+          <div class="career-lines">
+            <p>Наставники и профессиональная команда</p>
+            <p>Оплачиваемая стажировка</p>
+            <p>Гибкий график, совместимый с учёбой</p>
+            <p>Практика в технологической отрасли</p>
+            <p>Возможность карьерного роста</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- АНКЕТА -->
+    <section class="application section-bg" id="contacts" style="--bg-image: url('assets/application.jpg');">
+      <div class="container">
+        <div class="form-card">
+          <p class="content-panel-title-2">Создавай связь и решай реальные задачи</p>
+          <p class="form-lead">Узнай первым о стажировках, образовательных возможностях и проектах T2 для будущих специалистов.</p>
+
+          <form id="applicationForm" novalidate>
+            <label>
+              <input type="text" name="name" placeholder="ФИО" required>
+            </label>
+
+            <label>
+              <input type="text" name="course" placeholder="Класс или курс">
+            </label>
+
+            <label>
+              <input type="text" name="city" placeholder="Город / населённый пункт" required>
+            </label>
+
+            <label>
+              <input type="text" name="contact" placeholder="Телефон или email" required>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" name="consent" required>
+              <span>Даю согласие на обработку персональных данных</span>
+            </label>
+
+            <button class="btn btn-pink-2" type="submit">Хочу быть на связи</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-text">
+        <p>Уже готов искать стажировку?</p>
+        <p>Проверь актуальные возможности на официальном сайте T2.</p>
+      </div>
+      <div class="footer-contact">
+        <strong>611</strong>
+        <span>Для номеров T2</span>
+      </div>
+      <div class="footer-contact">
+        <strong>8 (342) 474-474</strong>
+        <span>Для всех остальных номеров</span>
+      </div>
+      <a class="footer-link" href="#top" aria-label="Наверх"><img src="assets/t2_Logo_Black_sRGB.svg"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

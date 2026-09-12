@@ -1,0 +1,1 @@
+Положите сюда hero.jpg, suitability.jpg, career.jpg, application.jpg, what-does-engineer.jpg, video-poster.jpg и telecom-engineer.mp4 согласно README.md.
