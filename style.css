@@ -1,9 +1,8 @@
 
 :root {
-  --cyan: #08b8e8;
-  --cyan-dark: #009fd0;
-  --pink: #ff2c91;
-  --green: #9cff00;
+  --cyan: #00bfff;
+  --pink: #ff3495;
+  --green: #a7fc00;
   --black: #050505;
   --white: #fff;
   --radius: 28px;
@@ -23,11 +22,9 @@
 * { box-sizing: border-box; }
 
 html {
-  scrollbar-width: none ;
+  scrollbar-width:none  ;
 }
-.t2{
-  height: 38px;
-}
+
 body {
   margin: 0;
   color: var(--black);
@@ -36,7 +33,9 @@ body {
   font-size: 16px;
   line-height: 1.45;
 }
-
+.t2{
+  height: 38px;
+}
 body.menu-open { overflow: hidden; }
 
 a { color: inherit; text-decoration: none; }
@@ -343,18 +342,24 @@ h2 {
 .video-player {
   position: relative;
   width: min(960px, 100%);
-  aspect-ratio: 16 / 9;
   margin: 0 auto;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 4px solid var(--cyan);
   border-radius: 20px;
   background: #000;
+  box-sizing: border-box;
 }
 
 .video {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
 }
 
@@ -390,30 +395,27 @@ h2 {
   fill: white;
   margin-left: 4px;
 }
-
 .video-controls {
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: 14px;
+  position: relative;
+  left: auto;
+  right: auto;
+
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 9px 12px;
-  border-radius: 999px;
-  background: rgba(0,0,0,.72);
-  opacity: 0;
-  transform: translateY(8px);
-  transition: .2s ease;
-}
 
-.video-player:hover .video-controls,
-.video-player:focus-within .video-controls,
-.video-player.is-playing .video-controls {
+  width: 100%;
+  margin-top: 14px;
+  padding: 0;
+
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
-
+.player-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
 .control-btn {
   display: grid;
   place-items: center;
@@ -427,8 +429,8 @@ h2 {
 }
 
 .control-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   fill: none;
   stroke: currentColor;
   stroke-width: 2;
@@ -445,14 +447,35 @@ h2 {
 }
 
 .progress {
+  flex: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 6px;
+  margin: 0;
+  background: var(--cyan);
+  border: none;
+  outline: none;
   width: 100%;
-  height: 4px;
-  accent-color: var(--cyan);
+}
+
+.progress::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--cyan);
+  border: none;
+}
+
+.progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: var(--cyan);
   cursor: pointer;
 }
 
 .time {
-  color: white;
+  color: black;
   font-size: 11px;
   white-space: nowrap;
 }
