@@ -25,7 +25,9 @@
 html {
   scrollbar-width: none ;
 }
-
+.t2{
+  height: 38px;
+}
 body {
   margin: 0;
   color: var(--black);
