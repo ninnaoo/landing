@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Лендинг профессии телеком-инженера">
+  <link rel="icon" href="assets/ico.ico" type="image/x-icon">
   <title>Телеком-инженер — T2</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,7 +30,6 @@
   </header>
 
   <main>
-    <!-- HERO: замените assets/hero.jpg на вашу картинку 1920x1080 -->
     <section class="hero section-bg" style="--bg-image: url('assets/hero.jpg');" aria-label="Телеком-инженер">
       <div class="container hero-content">
   
@@ -38,7 +38,6 @@
       </div>
     </section>
 
-    <!-- БЛОК 1 -->
     <section class="steps section-1" id="about">
       <div class="container-1">
         <p class="content-panel-title-1">Что делает телеком-инженер?</p>
@@ -50,7 +49,6 @@
       </div>
     </section>
 
-    <!-- БЛОК 2: фон 1920x1080 + текст -->
     <section class="profession section-bg" style="--bg-image: url('assets/suitability.jpg');">
       <div class="container-pr">
         <div class="content-panel content-panel--left">
@@ -86,29 +84,34 @@
       </div>
     </section>
 
-    <!-- ВИДЕО -->
     <section class="video-section section" id="video">
       <div class="container">
         <p class="content-panel-title-2">Ознакомься с профессией<br>телеком-инженера</p>
 
         <div class="video-player" data-video-player>
-          <video class="video" preload="metadata" poster="assets/video-poster.jpg">
-            <!-- Когда будет видео, раскомментируйте:
-            <source src="assets/telecom-engineer.mp4" type="video/mp4">
-            -->
-          </video>
 
-          <div class="video-empty">
-            <button class="play-button" type="button" aria-label="Воспроизвести видео">
-              <svg viewBox="0 0 24 24"><path d="M9 6.5 18 12l-9 5.5z"/></svg>
-            </button>
-            <span>Видео скоро появится</span>
+          <div class="video-frame">
+            <video class="video" preload="metadata" poster="assets/video-poster.jpg">
+              <source src="assets/T2 ANIM mp4.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-empty">
+              <button class="play-button" type="button" aria-label="Воспроизвести видео">
+                <svg class="player-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 4.5v15l12-7.5z" fill="#000"/>
+                </svg>
+              </button>
+            </div>
           </div>
 
           <div class="video-controls">
             <button class="control-btn play-toggle" type="button" aria-label="Воспроизвести">
-              <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5.5 18 12l-10 6.5z"/></svg>
-              <svg class="icon-pause" viewBox="0 0 24 24"><path d="M7 5h4v14H7zm6 0h4v14h-4z"/></svg>
+              <svg class="icon-play player-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4.5v15l12-7.5z" fill="#000"/>
+              </svg>
+              <svg class="icon-pause player-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 4h4v16H6zM14 4h4v16h-4z" fill="#000"/>
+              </svg>
             </button>
 
             <div class="progress-wrap">
@@ -116,20 +119,12 @@
             </div>
 
             <span class="time">0:00 / 0:00</span>
-
-            <button class="control-btn mute-toggle" type="button" aria-label="Выключить звук">
-              <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zm12 1.5a4 4 0 0 1 0 3M18.5 7a8 8 0 0 1 0 10"/></svg>
-            </button>
-
-            <button class="control-btn fullscreen-toggle" type="button" aria-label="На весь экран">
-              <svg viewBox="0 0 24 24"><path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4"/></svg>
-            </button>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- БЛОК 3: фон 1920x1080 + текст -->
     <section class="career section-bg" id="career" style="--bg-image: url('assets/career.jpg');">
       <div class="container">
         <div class="content-panel-2 content-panel--right">
@@ -145,7 +140,6 @@
       </div>
     </section>
 
-    <!-- АНКЕТА -->
     <section class="application section-bg" id="contacts" style="--bg-image: url('assets/application.jpg');">
       <div class="container">
         <div class="form-card">
